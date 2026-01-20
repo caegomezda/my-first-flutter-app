@@ -5,9 +5,10 @@ class CounterScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      home: Scaffold(
+    return Scaffold(
+        appBar: AppBar(
+          title: Center(child: Text("Counter Screen 2")) ,
+        ),
         body: Center(
           child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -21,7 +22,6 @@ class CounterScreen extends StatelessWidget {
         },
         child: Icon( Icons.plus_one ),
         ),
-      )
-    );
+      );
   }
 }
